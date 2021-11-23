@@ -33,10 +33,10 @@ body {
 	align-items: center;
 	text-align: center;
 	padding: 3rem 1rem;
-	border: 1px solid white;
+	/* border: 1px solid white; */
 }
 .principal {
-	background: linear-gradient(115deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
 		url(../img/white-interior-blur-blurred-chair.jpg) center/cover fixed;
 }
 h1 {
@@ -49,7 +49,10 @@ a{
 .social-icons {
 	font-size: 3rem;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+}
+.social-icons a{
+  padding: 1rem;
 }
 .goDown{
   position: absolute;
@@ -62,7 +65,7 @@ a{
 }
 
 
-/** Historia */
+/****** Historia ******/
 h2 {
 	font-size: 3rem;
 	margin-bottom: 1rem;
@@ -78,10 +81,29 @@ img {
 	width: 100%;
 	margin: 0 auto;
 }
+
+/***** Donde estamos ******/
+.google-map{
+  display: block;
+  max-width: 100%;
+}
+#map{
+	background: linear-gradient(115deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+	
+	url(../img/image-from-rawpixel-id-435177-jpeg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 /****** ESPECIALIDADES ******/
-/* .section-text {
-	margin-bottom: 3rem;
-} */
+.img-container{
+	margin-top: 2rem;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 
 figure {
 	margin-bottom: 1rem;
@@ -94,19 +116,77 @@ figcaption {
 	width: 100%;
 	padding: 5px;
 	font-size: 1.6rem;
-	margin: 0 auto 0.5rem;
+	margin: 0 auto 5%;
 	position: absolute;
-	background-color: #22222288;
+	background-color: #11111188;
 	/* text-transform: uppercase; */
 }
 
-.menu {
-	/* background: url(../img/tasty-italian-pizza-with-tomato-sauce-and-parmesan.jpg)
-		60% center/cover; */
+
+/****** MENU *****/
+#menu{
+	background: linear-gradient(115deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+	url(../img/glass-of-red-wine-and-bottle-on-bar-counter.jpg);
+	background-position:  30% center;
+	background-size: cover;
+	background-attachment: fixed;
+	
 }
-.text-menu {
+.menu-container {
 	background: rgba(0, 0, 0, 0.5);
 	width: 90%;
-	height: 50vh;
 	border-radius: 10px;
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 5px 1rem;
+	align-content: center; */
+	display: flex;
+	flex-direction: column;
+}
+/** Items **/
+table{
+	width: 100%;
+	font-size: 1.3rem;
+	border-spacing: 10px;
+}
+tr{
+	padding-bottom: 0.5rem;
+}
+/* th{
+	margin-bottom: 1rem;
+} */
+td:first-child{
+	text-align: left;
+}
+td:last-child{
+	width: 4rem;
+}
+
+
+
+@media (min-width: 767px){
+  .principal{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .social-icons{
+    flex-direction: column;
+  }
+  h1{
+    text-align: left;
+    font-size: 4rem;
+  }
+  img{
+    width: 70vw;
+    max-width: 600px;
+  }
+	.menu-container{
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+	table{
+		width: 50%;
+		max-width: 400px;
+	}
 }

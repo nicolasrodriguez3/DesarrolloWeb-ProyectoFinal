@@ -16,14 +16,17 @@
 	</head>
 	<body>
 		<section class="section principal" id="home">
-			<h1>Restaurante Riquísimo</h1>
+			<h1>Restaurante<br />Riquísimo</h1>
 			<div class="social-icons">
-				<a href="wa.me/5493434043454" title="Comunicate por Whatsapp"><i class="fab fa-whatsapp"></i></a>
-				<a href="wa.me/5493434043454" title="Ver nuestro Instagram"><i class="fab fa-instagram"></i></a>
+				<a href="https://api.whatsapp.com/send?phone=543434043454&text=Hola!%20" target="_blank" rel="noopener noreferrer" title="Comunicate por Whatsapp"><i class="fab fa-whatsapp"></i></a>
+				
+				<a href="https://www.instagram.com/nicolasrodriguez3/" target="_blank" rel="noopener noreferrer" title="Ver nuestro Instagram"
+					><i class="fab fa-instagram"></i
+				></a>
 			</div>
-      <a href="#history" class="goDown">
-        <i class="fas fa-angle-double-down"></i>
-      </a>
+			<a href="#history" class="goDown">
+				<i class="fas fa-angle-double-down"></i>
+			</a>
 		</section>
 		<section class="section" id="history">
 			<div class="section-text">
@@ -38,6 +41,7 @@
 			</div>
 
 			<img
+				class="img-destacada"
 				src="./img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg"
 				alt=""
 			/>
@@ -53,13 +57,21 @@
 					</p>
 				</div>
 			</div>
-			<img src="./img/white-interior-blur-blurred-chair.jpg" alt="" />
+			<iframe
+				class="google-map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8044.109938213013!2d-60.311398850352454!3d-32.03862901952712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b425d75440bfcb%3A0x60380fe1af0d7c88!2sCRESPO!5e0!3m2!1ses!2sar!4v1637633151141!5m2!1ses!2sar"
+				width="600"
+				height="400"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+			></iframe>
 		</section>
 		<section class="section" id="specials">
 			<div class="section-text">
 				<h2>Especialidades</h2>
 				<p>
-					Nos destacamos en los pequeños detalles, que son los que hacen grandes
+					Nos destacamos en los pequeños detalles, los que hacen grandes
 					diferencias.
 				</p>
 			</div>
@@ -89,7 +101,98 @@
 		</section>
 		<section class="section menu" id="menu">
 			<h2>Menú</h2>
-			<div class="text-menu">asd</div>
+			<div class="menu-container">
+				<table>
+					<thead>
+						<tr>
+							<th colspan="2">Bebidas sin alcohol</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Coca-Cola 1,5L</td>
+							<td>$200</td>
+						</tr>
+						<tr>
+							<td>Pepsi 1,5L</td>
+							<td>$190</td>
+						</tr>
+						<tr>
+							<td>Acuarius 1,5L</td>
+							<td>$150</td>
+						</tr>
+						<tr>
+							<td>Agua mineral 1L</td>
+							<td>$100</td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr>
+							<th colspan="2">Bebidas con alcohol</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Cerveza rubia 900cc</td>
+							<td>$300</td>
+						</tr>
+						<tr>
+							<td>Cerveza negra 900cc</td>
+							<td>$350</td>
+						</tr>
+						<tr>
+							<td>Vino 750cc</td>
+							<td>$300</td>
+						</tr>
+						<tr>
+							<td>Fernet 500cc</td>
+							<td>$300</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="2">Entrada</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Papas fritas</td>
+							<td>$200</td>
+						</tr>
+						<tr>
+							<td>Papas Noisette</td>
+							<td>$250</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="2">Pizzas</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Común</td>
+							<td>$500</td>
+						</tr>
+						<tr>
+							<td>Especial</td>
+							<td>$700</td>
+						</tr>
+						<tr>
+							<td>Napolitana</td>
+							<td>$700</td>
+						</tr>
+						<tr>
+							<td>Calabresa</td>
+							<td>$750</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</section>
 	</body>
 </html>

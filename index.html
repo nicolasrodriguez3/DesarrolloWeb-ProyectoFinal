@@ -5,194 +5,256 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="./css/animate.css" />
 		<link rel="shortcut icon" href="img/plant.png" type="image/x-icon" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Proyecto final</title>
 	</head>
 	<body>
-		<section class="section principal" id="home">
-			<h1>Restaurante<br />Riquísimo</h1>
-			<div class="social-icons">
-				<a href="https://api.whatsapp.com/send?phone=543434043454&text=Hola!%20" target="_blank" rel="noopener noreferrer" title="Comunicate por Whatsapp"><i class="fab fa-whatsapp"></i></a>
-				
-				<a href="https://www.instagram.com/nicolasrodriguez3/" target="_blank" rel="noopener noreferrer" title="Ver nuestro Instagram"
-					><i class="fab fa-instagram"></i
-				></a>
-			</div>
-			<a href="#history" class="goDown">
-				<i class="fas fa-angle-double-down"></i>
-			</a>
-		</section>
-		<section class="section" id="history">
-			<div class="section-text">
-				<h2>Historia</h2>
-				<div class="text-description">
-					<p>Somos un restaurante recordado por su gran cultura y sabor.</p>
-					<p>
-						Desde 1954 nuestros clientes nos eligen por nuestra gran atención y
-						exquisitos platos.
-					</p>
+		<nav class="mi-navbar navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#history">Historia</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#map">Ubicación</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#specials">Especialidades</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#menu">Menú</a>
+						</li>
+					</ul>
 				</div>
 			</div>
+		</nav>
 
-			<img
-				class="img-destacada"
-				src="./img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg"
-				alt=""
-			/>
-		</section>
-		<section class="section" id="map">
-			<div class="section-text">
-				<h2>Donde estamos</h2>
-				<div class="text-description">
-					<p>Nos encontramos en Calle Falsa 123 de Crespo, Entre Rios.</p>
-					<p>
-						A tan solo 100 metros del río, te permitirá disfrutar de una
-						experiencia unica y relajante
-					</p>
+		<main
+			class="mi-container"
+			data-bs-spy="scroll"
+			data-bs-target="#scrollspy"
+			data-bs-offset="100"
+			tabindex="0"
+		>
+			<section class="section principal" id="home">
+				<h1>Restaurante<br />Riquísimo</h1>
+				<div class="social-icons">
+					<a
+						href="https://api.whatsapp.com/send?phone=543434043454&text=Hola!%20"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Comunicate por Whatsapp"
+						><i class="fab fa-whatsapp"></i
+					></a>
+
+					<a
+						href="https://www.instagram.com/nicolasrodriguez3/"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Ver nuestro Instagram"
+						><i class="fab fa-instagram"></i
+					></a>
 				</div>
-			</div>
-			<iframe
-				class="google-map"
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8044.109938213013!2d-60.311398850352454!3d-32.03862901952712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b425d75440bfcb%3A0x60380fe1af0d7c88!2sCRESPO!5e0!3m2!1ses!2sar!4v1637633151141!5m2!1ses!2sar"
-				width="600"
-				height="400"
-				style="border: 0"
-				allowfullscreen=""
-				loading="lazy"
-			></iframe>
-		</section>
-		<section class="section" id="specials">
-			<div class="section-text">
-				<h2>Especialidades</h2>
-				<p>
-					Nos destacamos en los pequeños detalles, los que hacen grandes
-					diferencias.
-				</p>
-			</div>
-			<div class="img-container">
-				<figure>
-					<figcaption>Pizzas</figcaption>
-					<img
-						src="./img/mixed-ingredient-pizza-on-wooden-board.jpg"
-						alt="Pizza"
-					/>
-				</figure>
-				<figure>
-					<figcaption>Carnes</figcaption>
-					<img
-						src="./img/grilled-beef-steak-on-the-dark-wooden-surface.jpg"
-						alt="Carne asada"
-					/>
-				</figure>
-				<figure>
-					<figcaption>Pastas</figcaption>
-					<img
-						src="./img/closeup-shot-of-cannelloni-dish-stuffed-with-spinach-and-ricotta-served-with-bolognese-sauce.jpg"
-						alt="Canelones de verdura"
-					/>
-				</figure>
-			</div>
-		</section>
-		<section class="section menu" id="menu">
-			<h2>Menú</h2>
-			<div class="menu-container">
-				<table>
-					<thead>
-						<tr>
-							<th colspan="2">Bebidas sin alcohol</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Coca-Cola 1,5L</td>
-							<td>$200</td>
-						</tr>
-						<tr>
-							<td>Pepsi 1,5L</td>
-							<td>$190</td>
-						</tr>
-						<tr>
-							<td>Acuarius 1,5L</td>
-							<td>$150</td>
-						</tr>
-						<tr>
-							<td>Agua mineral 1L</td>
-							<td>$100</td>
-						</tr>
-					</tbody>
-					<thead>
-						<tr>
-							<th colspan="2">Bebidas con alcohol</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Cerveza rubia 900cc</td>
-							<td>$300</td>
-						</tr>
-						<tr>
-							<td>Cerveza negra 900cc</td>
-							<td>$350</td>
-						</tr>
-						<tr>
-							<td>Vino 750cc</td>
-							<td>$300</td>
-						</tr>
-						<tr>
-							<td>Fernet 500cc</td>
-							<td>$300</td>
-						</tr>
-					</tbody>
-				</table>
-				<table>
-					<thead>
-						<tr>
-							<th colspan="2">Entrada</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Papas fritas</td>
-							<td>$200</td>
-						</tr>
-						<tr>
-							<td>Papas Noisette</td>
-							<td>$250</td>
-						</tr>
-					</tbody>
-				</table>
-				<table>
-					<thead>
-						<tr>
-							<th colspan="2">Pizzas</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Común</td>
-							<td>$500</td>
-						</tr>
-						<tr>
-							<td>Especial</td>
-							<td>$700</td>
-						</tr>
-						<tr>
-							<td>Napolitana</td>
-							<td>$700</td>
-						</tr>
-						<tr>
-							<td>Calabresa</td>
-							<td>$750</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</section>
+				<a href="#history" class="goDown">
+					<i class="fas fa-angle-double-down"></i>
+				</a>
+			</section>
+			<section class="section" id="history">
+				<div class="section-text">
+					<h2>Historia</h2>
+					<div class="text-description">
+						<p>Somos un restaurante recordado por su gran cultura y sabor.</p>
+						<p>
+							Desde 1954 nuestros clientes nos eligen por nuestra gran atención y exquisitos platos.
+						</p>
+					</div>
+				</div>
+
+				<img
+					class="img-destacada"
+					src="./img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg"
+					alt=""
+				/>
+			</section>
+			<section class="section" id="map">
+				<div class="section-text">
+					<h2>Donde estamos</h2>
+					<div class="text-description">
+						<p>Nos encontramos en Calle Falsa 123 de Crespo, Entre Rios.</p>
+						<p>
+							A tan solo 100 metros del río, te permitirá disfrutar de una experiencia única y
+							relajante.
+						</p>
+					</div>
+				</div>
+				<iframe
+					class="google-map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8044.109938213013!2d-60.311398850352454!3d-32.03862901952712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b425d75440bfcb%3A0x60380fe1af0d7c88!2sCRESPO!5e0!3m2!1ses!2sar!4v1637633151141!5m2!1ses!2sar"
+					width="600"
+					height="400"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					title="Mapa del restaurante en Google Maps"
+				></iframe>
+			</section>
+			<section class="section" id="specials">
+				<div class="section-text">
+					<h2>Especialidades</h2>
+					<p>Nos destacamos en los pequeños detalles, los que hacen grandes diferencias.</p>
+				</div>
+				<div class="img-container">
+					<figure>
+						<figcaption>Pizzas</figcaption>
+						<img src="./img/mixed-ingredient-pizza-on-wooden-board.jpg" alt="Foto de una pizza" />
+					</figure>
+					<figure>
+						<figcaption>Carnes</figcaption>
+						<img
+							src="./img/grilled-beef-steak-on-the-dark-wooden-surface.jpg"
+							alt="Foto de carne asada"
+						/>
+					</figure>
+					<figure>
+						<figcaption>Pastas</figcaption>
+						<img
+							src="./img/closeup-shot-of-cannelloni-dish-stuffed-with-spinach-and-ricotta-served-with-bolognese-sauce.jpg"
+							alt="Foto de canelones de verdura"
+						/>
+					</figure>
+				</div>
+			</section>
+			<section class="section menu" id="menu">
+				<h2>Menú</h2>
+				<div class="menu-container">
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">Bebidas sin alcohol</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Coca-Cola 1,5L</td>
+								<td>$200</td>
+							</tr>
+							<tr>
+								<td>Pepsi 1,5L</td>
+								<td>$190</td>
+							</tr>
+							<tr>
+								<td>Acuarius 1,5L</td>
+								<td>$150</td>
+							</tr>
+							<tr>
+								<td>Agua mineral 1L</td>
+								<td>$100</td>
+							</tr>
+						</tbody>
+						<thead>
+							<tr>
+								<th colspan="2">Bebidas con alcohol</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cerveza rubia 900cc</td>
+								<td>$300</td>
+							</tr>
+							<tr>
+								<td>Cerveza negra 900cc</td>
+								<td>$350</td>
+							</tr>
+							<tr>
+								<td>Vino 750cc</td>
+								<td>$300</td>
+							</tr>
+							<tr>
+								<td>Fernet 500cc</td>
+								<td>$300</td>
+							</tr>
+						</tbody>
+					</table>
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">Entrada</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Papas fritas</td>
+								<td>$200</td>
+							</tr>
+							<tr>
+								<td>Papas Noisette</td>
+								<td>$250</td>
+							</tr>
+						</tbody>
+					</table>
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">Pizzas</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Común</td>
+								<td>$500</td>
+							</tr>
+							<tr>
+								<td>Especial</td>
+								<td>$700</td>
+							</tr>
+							<tr>
+								<td>Napolitana</td>
+								<td>$700</td>
+							</tr>
+							<tr>
+								<td>Calabresa</td>
+								<td>$750</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+				crossorigin="anonymous"
+			></script>
+			<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+		</main>
 	</body>
 </html>

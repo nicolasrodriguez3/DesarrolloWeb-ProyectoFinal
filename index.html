@@ -23,8 +23,8 @@
 	</head>
 	<body>
 		<nav class="mi-navbar navbar navbar-expand-lg navbar-dark fixed-top">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Navbar</a>
+			<div class="container">
+				<a class="navbar-brand" href="#">Riquísimo!</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -38,19 +38,19 @@
 				</button>
 				<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<li class="nav-item d-flex align-items-center">
+							<a class="nav-link active" aria-current="page" href="#home">Home</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item d-flex align-items-center">
 							<a class="nav-link" href="#history">Historia</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item d-flex align-items-center">
 							<a class="nav-link" href="#map">Ubicación</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item d-flex align-items-center">
 							<a class="nav-link" href="#specials">Especialidades</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item d-flex align-items-center">
 							<a class="nav-link" href="#menu">Menú</a>
 						</li>
 					</ul>
@@ -66,7 +66,7 @@
 			tabindex="0"
 		>
 			<section class="section principal" id="home">
-				<h1>Restaurante<br />Riquísimo</h1>
+				<h1>Restaurante<br /><span>Riquísimo</span></h1>
 				<div class="social-icons">
 					<a
 						href="https://api.whatsapp.com/send?phone=543434043454&text=Hola!%20"
@@ -132,120 +132,319 @@
 					<h2>Especialidades</h2>
 					<p>Nos destacamos en los pequeños detalles, los que hacen grandes diferencias.</p>
 				</div>
-				<div class="img-container">
-					<figure>
-						<figcaption>Pizzas</figcaption>
-						<img src="./img/mixed-ingredient-pizza-on-wooden-board.jpg" alt="Foto de una pizza" />
-					</figure>
-					<figure>
-						<figcaption>Carnes</figcaption>
-						<img
-							src="./img/grilled-beef-steak-on-the-dark-wooden-surface.jpg"
-							alt="Foto de carne asada"
-						/>
-					</figure>
-					<figure>
-						<figcaption>Pastas</figcaption>
-						<img
-							src="./img/closeup-shot-of-cannelloni-dish-stuffed-with-spinach-and-ricotta-served-with-bolognese-sauce.jpg"
-							alt="Foto de canelones de verdura"
-						/>
-					</figure>
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-sm-10 col-md-9 col-lg-6 col-xxl-4">
+							<figure>
+								<figcaption>Pizzas</figcaption>
+								<img
+									src="./img/mixed-ingredient-pizza-on-wooden-board.jpg"
+									alt="Foto de una pizza"
+								/>
+							</figure>
+						</div>
+						<div class="col-sm-10 col-md-9 col-lg-6 col-xxl-4">
+							<figure>
+								<figcaption>Carnes</figcaption>
+								<img
+									src="./img/grilled-beef-steak-on-the-dark-wooden-surface.jpg"
+									alt="Foto de carne asada"
+								/>
+							</figure>
+						</div>
+						<div class="col-sm-10 col-md-9 col-lg-6 col-xxl-4">
+							<figure>
+								<figcaption>Pastas</figcaption>
+								<img
+									src="./img/closeup-shot-of-cannelloni-dish-stuffed-with-spinach-and-ricotta-served-with-bolognese-sauce.jpg"
+									alt="Foto de canelones de verdura"
+								/>
+							</figure>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="section menu" id="menu">
 				<h2>Menú</h2>
-				<div class="menu-container">
-					<table>
-						<thead>
-							<tr>
-								<th colspan="2">Bebidas sin alcohol</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Coca-Cola 1,5L</td>
-								<td>$200</td>
-							</tr>
-							<tr>
-								<td>Pepsi 1,5L</td>
-								<td>$190</td>
-							</tr>
-							<tr>
-								<td>Acuarius 1,5L</td>
-								<td>$150</td>
-							</tr>
-							<tr>
-								<td>Agua mineral 1L</td>
-								<td>$100</td>
-							</tr>
-						</tbody>
-						<thead>
-							<tr>
-								<th colspan="2">Bebidas con alcohol</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Cerveza rubia 900cc</td>
-								<td>$300</td>
-							</tr>
-							<tr>
-								<td>Cerveza negra 900cc</td>
-								<td>$350</td>
-							</tr>
-							<tr>
-								<td>Vino 750cc</td>
-								<td>$300</td>
-							</tr>
-							<tr>
-								<td>Fernet 500cc</td>
-								<td>$300</td>
-							</tr>
-						</tbody>
-					</table>
-					<table>
-						<thead>
-							<tr>
-								<th colspan="2">Entrada</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Papas fritas</td>
-								<td>$200</td>
-							</tr>
-							<tr>
-								<td>Papas Noisette</td>
-								<td>$250</td>
-							</tr>
-						</tbody>
-					</table>
-					<table>
-						<thead>
-							<tr>
-								<th colspan="2">Pizzas</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Común</td>
-								<td>$500</td>
-							</tr>
-							<tr>
-								<td>Especial</td>
-								<td>$700</td>
-							</tr>
-							<tr>
-								<td>Napolitana</td>
-								<td>$700</td>
-							</tr>
-							<tr>
-								<td>Calabresa</td>
-								<td>$750</td>
-							</tr>
-						</tbody>
-					</table>
+				<div class="menu-container container">
+					<div class="row" data-masonry='{"percentPosition": true }'>
+						<div class="col-sm-6 col-xl-4 px-4 px-lg-5">
+							<h4 class="mb-2 mt-4">Bebidas sin alcohol</h4>
+							<div class="row">
+								<div class="col-9">Coca Cola 1,5L</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">200</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Pepsi 1,5L</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">190</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Acuarius 1,5L</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">150</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Agua mineral 500cc</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">100</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Agua mineral 1L</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">150</div>
+								</div>
+							</div>
+
+							<h4 class="mb-2 mt-4">Bebidas con alcohol</h4>
+							<div class="row">
+								<div class="col-9">Cerveza rubia 900cc</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">300</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Cerveza negra 900cc</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">350</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Vino 750cc</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">300</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Fernet 500cc</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">350</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Gancia 500cc</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">300</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-xl-4 px-4 px-lg-5">
+							<h4 class="mb-2 mt-4">Entrada</h4>
+							<div class="row">
+								<div class="col-9">Papas fritas</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">300</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Papas Fritas 1/2 porción</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">200</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Papas Noisette</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">350</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Picada para 2 personas</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">1000</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Picada para 4 personas</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">1500</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-xl-4 px-4 px-lg-5">
+							<h4 class="mb-2 mt-4">Pizzas</h4>
+							<div class="row">
+								<div class="col-9">Común</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">600</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Especial</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">750</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Napolitana</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">800</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Calabresa</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">800</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Primavera</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">700</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-xl-4 px-4 px-lg-5">
+							<h4 class="mb-2 mt-4">Sandwiches</h4>
+							<div class="row">
+								<div class="col-9">Común</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">500</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Completo</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">750</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Monstruo</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">900</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-xl-4 px-4 px-lg-5">
+							<h4 class="mb-2 mt-4">Al plato</h4>
+							<div class="row">
+								<div class="col-9">Ravioles con tuco</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">700</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Canelones con salsa blanca</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">800</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Canelones con tuco</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">850</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Milanesa con guarnición</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">750</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Milanesa a la napolitana</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">850</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Milanesa a caballo</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">800</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Tira de asado con guarnición</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">900</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Parrillada para 2 personas</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">1500</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Parrillada para 4 personas</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">2000</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xl-4 px-4 px-lg-5">
+							<h4 class="mb-2 mt-4">Hamburguesas</h4>
+							<div class="row">
+								<div class="col-9">Común</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">400</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Completa</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">700</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Doble carne</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">900</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">Triple carne</div>
+								<div class="col-3 d-flex align-items-center">
+									<small>$</small>
+									<div class="flex-grow-1 text-end">1000</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -254,7 +453,12 @@
 				integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 				crossorigin="anonymous"
 			></script>
-			<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+			<script
+				src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+				integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+				crossorigin="anonymous"
+				async
+			></script>
 		</main>
 	</body>
 </html>

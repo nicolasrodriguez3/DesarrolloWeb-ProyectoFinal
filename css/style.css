@@ -1,44 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@400;500;700&display=swap');
-:root {
-	--color-texto: #ececec;
-	--color-acento: #640000;
-	--color-fondo1: #201c1c;
-	--color-fondo2: #201b1b;
-	--font-principal: "Roboto", sans-serif;
-	--font-acento: 'Kaushan Script', cursive;
-}
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@400;500;700&display=swap");
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-.active{
-	font: 1.2rem var(--font-acento);
-}
-html:focus-within {
-  scroll-behavior: smooth;
-}
-body {
-	background: var(--color-fondo1);
-	background: linear-gradient(to top right, var(--color-fondo2) 0%, var(--color-fondo1) 100%);
-	color: var(--color-texto);
-	font-family: var(--font-principal);
-	position: relative;
-	padding-top: 60px;
-}
-.mi-navbar {
-	background-color: #1a130f;
-	min-height: 60px;
-}
-
-.mi-container {
-	height: calc(100vh - 60px);
-}
-
-/* Works on Firefox */
-* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Works on Firefox */
   scrollbar-width: thin;
-  scrollbar-color: var(--color-texto) #110b0b;
+  scrollbar-color: rgba(236, 236, 236, 0.7) #110b0b;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -51,201 +18,214 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--color-texto);
+  background-color: rgba(236, 236, 236, 0.7);
   border-radius: 20px;
-  /* border: 3px solid orange; */
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #201c1c;
+  background: linear-gradient(to top right, #201b1b 0%, #201c1c 100%);
+  color: #ececec;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  padding-top: 60px;
+}
+
+.mi-navbar {
+  background-color: #1a130f;
+  min-height: 60px;
+}
+
+.mi-container {
+  height: calc(100vh - 60px);
+  position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.active {
+  font: 1.2rem "Kaushan Script", cursive;
 }
 
 .section {
-	scroll-snap-align: start;
-	position: relative;
-	min-height: calc(100vh - 60px);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center;
-	padding: 3rem 1rem;
+  position: relative;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
 .principal {
-	background: linear-gradient(115deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-		url(../img/white-interior-blur-blurred-chair.jpg) center/cover fixed;
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/white-interior-blur-blurred-chair.jpg) center/cover fixed;
 }
-h1 {
-	font-size: 3rem;
-	/* text-transform: uppercase; */
+.principal h1 {
+  font-size: 3rem;
+  /* text-transform: uppercase; */
 }
-.principal h1 span{
-	font: 5rem var(--font-acento);
-	/* text-transform: capitalize; */
+.principal h1 span {
+  font: 5rem "Kaushan Script", cursive;
+  /* text-transform: capitalize; */
+}
 
-}
 a {
-	color: inherit;
+  color: inherit;
 }
+
 .social-icons {
-	font-size: 3rem;
-	display: flex;
-	gap: 1rem;
+  font-size: 3rem;
+  display: flex;
+  gap: 1rem;
 }
 .social-icons a {
-	padding: 1rem;
+  padding: 1rem;
 }
-.social-icons a:link,
-.social-icons a:visited,
-.goDown:link,
-.goDown:visited {
-	color: #ddd;
+.social-icons a:link, .social-icons a:visited {
+  color: #ddd;
 }
 .social-icons a:hover {
-	color: white;
+  transition: transform 0.3s;
+  color: white;
+  transform: scale(1.05);
 }
-.goDown {
-	position: absolute;
-	bottom: 30px;
-	padding: 1rem;
-	font-size: 1.5rem;
-}
-.goDown:active,
 .social-icons a:active {
-	transform: scale(0.9);
+  transition: transform 0.1s;
+  transform: scale(0.9);
+}
+
+.goDown {
+  position: absolute;
+  bottom: 30px;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.goDown:link, .goDown:visited {
+  color: #ddd;
+}
+.goDown:active {
+  transform: scale(0.9);
 }
 .goDown:hover {
-	animation: bounce 1.5s infinite;
-	color: white;
+  animation: bounce 1.5s infinite;
+  color: white;
 }
+
 @keyframes bounce {
-	70% {
-		transform: translateY(20%);
-	}
+  70% {
+    transform: translateY(20%);
+  }
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /****** Historia ******/
-h2 {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-	font-weight: 400;
-}
-p {
-	font-size: 20px;
-	margin-bottom: 0.5rem;
-	line-height: 1.5;
-}
-img {
-	display: block;
-	width: 100%;
-	margin: 0 auto;
+.section-text p {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 /***** Donde estamos ******/
 .google-map {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 90vw;
 }
+
 #map {
-	background: linear-gradient(115deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-		url(../img/image-from-rawpixel-id-435177-jpeg.jpg);
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/image-from-rawpixel-id-435177-jpeg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /****** ESPECIALIDADES ******/
-.img-container {
-	margin-top: 2rem;
-	display: flex;
-	gap: 1rem;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 figure {
-	margin-bottom: 1rem;
-	position: relative;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-figcaption {
-	width: 100%;
-	padding: 5px;
-	font-size: 1.6rem;
-	margin: 0 auto 5%;
-	position: absolute;
-	background-color: #11111188;
-	/* text-transform: uppercase; */
+figure figcaption {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.6rem;
+  margin: 0 auto 5%;
+  position: absolute;
+  background-color: #11111188;
+  /* text-transform: uppercase; */
 }
 
 /****** MENU *****/
 #menu {
-	background: linear-gradient(115deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-		url(../img/glass-of-red-wine-and-bottle-on-bar-counter.jpg);
-	background-position: 30% center;
-	background-size: cover;
-	background-attachment: fixed;
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../img/glass-of-red-wine-and-bottle-on-bar-counter.jpg);
+  background-position: 30% center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 .menu-container {
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
-	font-size: 1.3rem;
-	
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 1.3rem;
 }
-.menu-container h4{
-	font: 2rem var(--font-acento);
+.menu-container h4 {
+  font: 2rem "Kaushan Script", cursive;
 }
-.menu-container .row .row{
-	text-align: left;
+.menu-container .row .row {
+  text-align: left;
 }
-.menu-container .row .row > .col-9{
-	margin-bottom: .5rem;
-}
-/** Items **/
-table {
-	width: 100%;
-	font-size: 1.3rem;
-	border-spacing: 10px;
-}
-tr {
-	padding-bottom: 0.5rem;
-}
-/* th{
-	margin-bottom: 1rem;
-} */
-td:first-child {
-	text-align: left;
-}
-td:last-child {
-	width: 4rem;
+.menu-container .row .row .col-9 {
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) {
-	.principal {
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	.mi-container{
-		
-	overflow: auto;
-	scroll-snap-type: y mandatory;
-	}
-	.social-icons {
-		flex-direction: column;
-	}
-	h1 {
-		text-align: left;
-		font-size: 4rem;
-	}
-	img {
-		width: 70vw;
-		max-width: 600px;
-	}
-	figure img{
-		width: 100%;
-	}
-	
-	/* 	table{
-		width: 50%;
-		max-width: 400px; 
-	}*/
+  .principal {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 4rem;
+  }
+
+  img {
+    width: 70vw;
+    max-width: 600px;
+  }
+
+  figure img {
+    width: 100%;
+  }
+
+  .img-destacada {
+    filter: grayscale(1);
+  }
+  .img-destacada:hover {
+    transition: filter 0.3s;
+    filter: grayscale(0);
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

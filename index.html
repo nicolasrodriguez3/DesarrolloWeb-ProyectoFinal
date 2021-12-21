@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,6 @@
 			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./css/animate.css" />
 		<link rel="shortcut icon" href="img/plant.png" type="image/x-icon" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Proyecto final</title>
@@ -27,6 +26,7 @@
 			<div class="container">
 				<a class="navbar-brand" href="#">Riquísimo!</a>
 				<button
+					id="btn-nav"
 					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
@@ -260,14 +260,14 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-9">Papas Fritas 1/2 porción</div>
+								<div class="col-9">Papas fritas 1/2 porción</div>
 								<div class="col-3 d-flex align-items-center">
 									<small>$</small>
 									<div class="flex-grow-1 text-end">200</div>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-9">Papas Noisette</div>
+								<div class="col-9">Papas noisette</div>
 								<div class="col-3 d-flex align-items-center">
 									<small>$</small>
 									<div class="flex-grow-1 text-end">350</div>
@@ -465,5 +465,11 @@
 			crossorigin="anonymous"
 			async
 		></script>
+		<script>
+			const btn = document.getElementById("btn-nav");
+			btn.addEventListener("blur", () => {
+				document.getElementById("navbarNav").classList.remove("show");
+			})
+		</script>
 	</body>
 </html>

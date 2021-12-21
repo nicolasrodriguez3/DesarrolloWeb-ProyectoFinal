@@ -468,7 +468,10 @@
 		<script>
 			const btn = document.getElementById("btn-nav");
 			btn.addEventListener("blur", () => {
-				document.getElementById("navbarNav").classList.remove("show");
+				setTimeout(ocultarMenu, 100)
+
+				function ocultarMenu(){
+				document.getElementById("navbarNav").classList.remove("show");}
 			})
 		</script>
 	</body>

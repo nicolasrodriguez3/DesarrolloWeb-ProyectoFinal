@@ -69,7 +69,7 @@ body {
 }
 
 .principal {
-  background: linear-gradient(115deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/white-interior-blur-blurred-chair.jpg) center/cover fixed;
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/white-interior-blur-blurred-chair.webp) center/cover fixed;
 }
 .principal h1 {
   font-size: 3rem;
@@ -154,7 +154,7 @@ img {
 }
 
 #map {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/image-from-rawpixel-id-435177-jpeg.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/image-from-rawpixel-id-435177-jpeg.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -180,7 +180,7 @@ figure figcaption {
 
 /****** MENU *****/
 #menu {
-  background: linear-gradient(115deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../img/glass-of-red-wine-and-bottle-on-bar-counter.jpg);
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../img/glass-of-red-wine-and-bottle-on-bar-counter.webp);
   background-position: 30% center;
   background-size: cover;
   background-attachment: fixed;

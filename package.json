@@ -1,17 +1,17 @@
 {
   "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto final del curso Desarrollo Web por Nicolas Rodriguez",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gosass": "sass --watch ./sass/style.scss ./css/style.css"
+    "sass": "sass --watch ./sass/style.scss ./css/style.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nicolasrodriguez3/DesarrolloWeb-ProyectoFinal.git"
   },
-  "author": "",
+  "author": "Nicolas Rodriguez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nicolasrodriguez3/DesarrolloWeb-ProyectoFinal/issues"

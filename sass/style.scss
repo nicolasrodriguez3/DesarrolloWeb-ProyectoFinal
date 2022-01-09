@@ -19,11 +19,9 @@ $font-acento: "Kaushan Script", cursive;
 *::-webkit-scrollbar {
 	width: 10px;
 }
-
 *::-webkit-scrollbar-track {
 	background: #110b0b;
 }
-
 *::-webkit-scrollbar-thumb {
 	background-color: rgba(236, 236, 236, 0.7);
 	border-radius: 20px;
@@ -43,8 +41,15 @@ body {
 .mi-navbar {
 	background-color: #1a130f;
 	min-height: 60px;
-}
 
+	.navbar-brand{
+		font: 1.5rem $font-acento;
+	}
+
+	#btn-nav {
+		border: none;
+	}
+}
 .mi-container {
 	height: calc(100vh - 60px);
 	position: relative;
@@ -97,13 +102,13 @@ a {
 			color: #ddd;
 		}
 		&:hover {
-			transition: transform .3s;
+			transition: transform 0.3s;
 			color: white;
-			transform: scale(1.05);
+			transform: translateY(5%);
 		}
 		&:active {
-			transition: transform .1s;
-			transform: scale(0.9);
+			transition: transform 0.1s;
+			transform: scale(0.9) translateY(6%);
 		}
 	}
 }
@@ -209,10 +214,31 @@ figure {
 	.row .row {
 		text-align: left;
 		margin-bottom: 0.5rem;
-		
 	}
 }
 
+/****** FOOTER *****/
+footer {
+	text-align: center;
+	padding: 2rem 0;
+
+	.col-lg-4 {
+		padding: 1.5rem 0;
+
+		p:first-child {
+			font: 1.5rem $font-acento;
+			margin-bottom: 1.5rem;
+		}
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+		a:hover {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+}
 @media (min-width: 768px) {
 	.principal {
 		flex-direction: row;
@@ -232,10 +258,10 @@ figure {
 	figure img {
 		width: 100%;
 	}
-	.img-destacada{
+	.img-destacada {
 		filter: grayscale(1);
-		&:hover{
-			transition: filter .3s;
+		&:hover {
+			transition: filter 0.3s;
 			filter: grayscale(0);
 		}
 	}
@@ -246,4 +272,4 @@ figure {
 // 		overflow: auto;
 // 		scroll-snap-type: y mandatory;
 // 	}
-// } 
+// }

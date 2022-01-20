@@ -15,7 +15,7 @@ Bienvenido a mi proyecto final del curso [Desarrollo Web](https://www.coderhouse
 
 ### El proyecto
 
-Fue un proyecto desafiante, en el cual trate de plasmar lo mejor posible los conocimientos que obtuve en el cursado, desde el HTML y CSS, pasando por Sass y Boostrap y la posterior subida a Github y al servidor Webhost.
+Fue un proyecto desafiante, en el cual trate de plasmar lo mejor posible los conocimientos que obtuve durante el cursado, desde el HTML y CSS, pasando por Sass y Boostrap y la posterior subida a Github y al servidor Webhost.
 
 El resultado final es una landing page minimalista, con colores e imagenes agradables a la vista y la posibilidad de ampliar el contenido a futuro.
 

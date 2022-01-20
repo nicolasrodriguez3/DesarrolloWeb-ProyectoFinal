@@ -1,6 +1,6 @@
 # Restaurante RIQUISIMO - Desarrollo Web
 
-Bienvenido al mi proyecto final del curso [Desarrollo Web](https://www.coderhouse.com/online/desarrollo-web-online) de Coderhouse.
+Bienvenido a mi proyecto final del curso [Desarrollo Web](https://www.coderhouse.com/online/desarrollo-web-online) de Coderhouse!
 
 ## Tabla de contenidos
 

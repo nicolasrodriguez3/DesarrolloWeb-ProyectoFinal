@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nicolasrodriguez3/DesarrolloWeb-ProyectoFinal/issues"
   },
-  "homepage": "https://github.com/nicolasrodriguez3/DesarrolloWeb-ProyectoFinal#readme"
+  "homepage": "https://github.com/nicolasrodriguez3/DesarrolloWeb-ProyectoFinal#readme",
+  "dependencies": {
+    "wowjs": "^1.1.3"
+  }
 }

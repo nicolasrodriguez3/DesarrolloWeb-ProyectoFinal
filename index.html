@@ -16,11 +16,24 @@
 			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="./css/animate.css"
+		/>
+
 		<link rel="shortcut icon" href="img/comida.png" type="image/x-icon" />
 		<link rel="stylesheet" href="css/style.css" />
-		<meta name="description" content="Lo invitamos a degustar de nuestras especialidades bajo el cielo estrellado de la ciudad de Crespo.">
-		<meta name="keywords" content="restaurant, restaurante, riquísimo, riquisimo, comer, comida, cenar, almorzar, crespo, menú">
-		<title>Restaurante RIQUÍSIMO - Tu mejor opción </title>
+		<meta
+			name="description"
+			content="Lo invitamos a degustar de nuestras especialidades bajo el cielo estrellado de la ciudad de Crespo."
+		/>
+		<meta
+			name="keywords"
+			content="restaurant, restaurante, riquísimo, riquisimo, comer, comida, cenar, almorzar, crespo, menú"
+		/>
+		<title>Restaurante RIQUÍSIMO - Tu mejor opción</title>
+
+		
 	</head>
 
 	<body>
@@ -69,8 +82,8 @@
 			tabindex="0"
 		>
 			<section class="section principal" id="home">
-				<h1>Restaurante<br /><span>Riquísimo</span></h1>
-				<div class="social-icons">
+				<h1 class="wow fadeInLeft">Restaurante<br /><span>Riquísimo</span></h1>
+				<div class="social-icons wow fadeIn">
 					<a
 						href="https://www.whatsapp.com"
 						target="_blank"
@@ -95,11 +108,9 @@
 			<!-- HISTORIA -->
 			<section class="section" id="history">
 				<div class="section-text">
-					<h2>Historia</h2>
+					<h2 >Historia</h2>
 					<div class="text-description">
-						<p>
-							Somos un restaurante recordado por su gran cultura y sabor.
-						</p>
+						<p>Somos un restaurante recordado por su gran cultura y sabor.</p>
 						<p>
 							Desde 1954 nuestros clientes nos eligen por nuestra gran atención y exquisitos platos.
 						</p>
@@ -475,7 +486,8 @@
 									target="_blank"
 									rel="noopener noreferrer"
 									title="Comunicate por Whatsapp"
-									>Mandanos un Whatsapp</a>
+									>Mandanos un Whatsapp</a
+								>
 							</p>
 							<p>
 								<a
@@ -483,22 +495,21 @@
 									target="_blank"
 									rel="noopener noreferrer"
 									title="Ver nuestro Instagram"
-									>Visitá nuesto Instagram</a>
+									>Visitá nuesto Instagram</a
+								>
 							</p>
-
 						</div>
 
-						<hr class="w-75 mx-auto d-lg-none">
-						
+						<hr class="w-75 mx-auto d-lg-none" />
+
 						<div class="col-lg-4">
 							<p>Nuestros horarios</p>
 							<p>Martes a jueves: 19 a 00hs</p>
 							<p>Viernes a domingo: 19 a 02hs</p>
 							<p>Lunes cerrado</p>
-
 						</div>
 
-						<hr class="w-75 mx-auto d-lg-none">
+						<hr class="w-75 mx-auto d-lg-none" />
 
 						<div class="col-lg-4">
 							<p>Dirección</p>
@@ -509,8 +520,6 @@
 				</div>
 			</footer>
 		</main>
-
-
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -523,14 +532,19 @@
 			crossorigin="anonymous"
 			async
 		></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 		<script>
 			const btn = document.getElementById("btn-nav");
 			btn.addEventListener("blur", () => {
-				setTimeout(ocultarMenu, 100)
+				setTimeout(ocultarMenu, 100);
 
-				function ocultarMenu(){
-				document.getElementById("navbarNav").classList.remove("show");}
-			})
+				function ocultarMenu() {
+					document.getElementById("navbarNav").classList.remove("show");
+				}
+			});
 		</script>
 	</body>
 </html>

@@ -15,7 +15,7 @@ Bienvenido a mi proyecto final del curso [Desarrollo Web](https://www.coderhouse
 
 ### El proyecto
 
-Fue un proyecto muy retador, en el cual trate de plasmar lo mas posible los conocimientos que obtuve en el cursado, desde el HTML, pasando por SCC, Sass y Boostrap y la posterior subida a Github y al servidor Webhost.
+Fue un proyecto desafiante, en el cual trate de plasmar lo mejor posible los conocimientos que obtuve en el cursado, desde el HTML y CSS, pasando por Sass y Boostrap y la posterior subida a Github y al servidor Webhost.
 
 El resultado final es una landing page minimalista, con colores e imagenes agradables a la vista y la posibilidad de ampliar el contenido a futuro.
 
@@ -26,7 +26,7 @@ El resultado final es una landing page minimalista, con colores e imagenes agrad
 
 ### Tecnologias utilizadas
 
-- Etiquetas semanticas de HTML5
+- Etiquetas semánticas de HTML5
 - Metodología Mobile-first 
 - Bootstrap
 - Flexbox
@@ -37,7 +37,7 @@ El resultado final es una landing page minimalista, con colores e imagenes agrad
 
 ## Agradecimiento
 
-No quiero dejar pasar la oportunidad para dejar mis saludos para el profe [Lauta](https://www.linkedin.com/in/lautaromontana/), que siempre con la mejor onda nos brindo todos sus conocimientos y tips. A el mejor tutor [Nico Cuello](https://www.linkedin.com/in/nicol%C3%A1s-gabriel-cuello-2936071b4/), que estuvo presente ante cada duda y a mis compañeros que hicieron que este curso sea mucho mas llevadero y divertido. Gracias!❤️🙌
+No quiero dejar pasar la oportunidad para enviar mis saludos al profe [Lauta](https://www.linkedin.com/in/lautaromontana/) que siempre con la mejor onda nos brindo todos sus conocimientos y tips. Al mejor tutor, [Nico Cuello](https://www.linkedin.com/in/nicol%C3%A1s-gabriel-cuello-2936071b4/), que estuvo presente ante cada duda y a mis compañeros que hicieron que este curso sea mucho mas llevadero y divertido. Gracias!❤️🙌
 
 ## Sobre mi
 

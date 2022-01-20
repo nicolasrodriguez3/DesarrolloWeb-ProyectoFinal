@@ -29,7 +29,7 @@ html:focus-within {
 body {
   background: #201c1c;
   background: linear-gradient(to top right, #201b1b 0%, #201c1c 100%);
-  color: #f0f0f0;
+  color: #ececec;
   font-family: "Roboto", sans-serif;
   position: relative;
   padding-top: 60px;
